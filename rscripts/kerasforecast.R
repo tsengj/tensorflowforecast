@@ -1,3 +1,15 @@
+reticulate::use_condaenv("keras-gpu")
+reticulate::conda_install("pandas", "keras-gpu")
+library(keras)
+install_keras(tensorflow = "gpu")
+library(tensorflow)
+install_tensorflow(version = "gpu")
+sess = tf$Session()
+hello <- tf$constant('Hello, TensorFlow!')
+sess$run(hello)
+
+
+
 # https://blogs.rstudio.com/tensorflow/posts/2017-12-20-time-series-forecasting-with-recurrent-neural-networks/
 
 dir.create("./jena_climate", recursive = TRUE)

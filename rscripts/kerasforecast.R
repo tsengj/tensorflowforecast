@@ -1,3 +1,5 @@
+devtools::install_github("rstudio/tensorflow")
+devtools::install_github("rstudio/keras")
 reticulate::use_condaenv("keras-gpu")
 reticulate::conda_install("pandas", "keras-gpu")
 library(keras)

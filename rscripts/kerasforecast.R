@@ -1,14 +1,14 @@
-devtools::install_github("rstudio/tensorflow")
-devtools::install_github("rstudio/keras")
-reticulate::use_condaenv("keras-gpu")
-reticulate::conda_install("pandas", "keras-gpu")
+# devtools::install_github("rstudio/tensorflow")
+# devtools::install_github("rstudio/keras")
+# reticulate::use_condaenv("keras-gpu")
+# reticulate::conda_install("pandas", "keras-gpu")
 library(keras)
-install_keras(tensorflow = "gpu")
+# install_keras(tensorflow = "gpu")
 library(tensorflow)
-install_tensorflow(version = "gpu")
-sess = tf$Session()
-hello <- tf$constant('Hello, TensorFlow!')
-sess$run(hello)
+# install_tensorflow(version = "gpu")
+# sess = tf$Session()
+# hello <- tf$constant('Hello, TensorFlow!')
+# sess$run(hello)
 
 
 

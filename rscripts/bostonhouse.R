@@ -83,7 +83,7 @@ history <- model %>% fit(
   verbose = 0,
   callbacks = list(early_stop, print_dot_callback)
 )
-
+library(ggplot2)
 plot(history, metrics = "mean_absolute_error", smooth = FALSE) +
   coord_cartesian(xlim = c(0, 150), ylim = c(0, 5))
 
@@ -93,3 +93,4 @@ paste0("Mean absolute error on test set: $", sprintf("%.2f", mae * 1000))
 
 test_predictions <- model %>% predict(test_data)
 test_predictions[ , 1]
+

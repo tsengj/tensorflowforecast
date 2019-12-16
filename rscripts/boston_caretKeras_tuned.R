@@ -137,4 +137,3 @@ preds <- predict(model, test_df)
 mae <- function(y, t) {
   100 * mean(abs(y-t) / t)
 }
-
